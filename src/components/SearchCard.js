@@ -9,7 +9,7 @@ const SearchCard = ({ item }) => {
         nav.navigate('Loading', { message: 'AI 분석중...' });
 
         setTimeout(() => {
-            nav.navigate('Summary', {item});
+            nav.replace('Summary', {item});
           }, 1500);
     };
 

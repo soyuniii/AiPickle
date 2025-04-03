@@ -12,7 +12,7 @@ const HomeScreen = () => {
         nav.navigate('Loading', { message: '검색 중...' });
 
         setTimeout(() => {
-            nav.navigate('SearchResult', { query: searchText });
+            nav.replace('SearchResult', { query: searchText });
           }, 1500);
       };
 
