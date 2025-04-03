@@ -3,12 +3,15 @@ import { Modal, View, Text, StyleSheet, TouchableOpacity,Image } from 'react-nat
 
 const DetailModal = ({ visible, onClose }) => {
     return (
+
         <Modal
             animationType="slide"
             transparent={true}
             visible={visible}
             onRequestClose={onClose}
+            backdropColor={0.5}
         >
+
             <View style={styles.modalContainer}>
                 <View style={styles.modalBox}>
                     <View style={styles.headerBox}>
@@ -35,8 +38,7 @@ const styles = StyleSheet.create({
     modalContainer: {
         flex: 1,
         justifyContent: 'flex-end',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)', // 반투명 배경
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
     },
     modalBox: {
         backgroundColor: '#fff',

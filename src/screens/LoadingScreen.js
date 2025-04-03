@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F9FAFB',
+    paddingBottom: '13%',
   },
   icon: {
     height: 45,
@@ -58,7 +59,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     color: '#888888',
-    marginBottom: 20,
   },
   
 });

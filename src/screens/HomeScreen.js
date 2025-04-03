@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#F9FAFB',
-        padding: 17,
+        padding: 20,
         justifyContent: 'flex-start',
         alignItems: 'center',
     },
     homeicon: {
         width: '100%',
         height: 45,
-        marginTop: 80,
+        marginTop: '30%',
         marginBottom: 20,
     },
     title: {

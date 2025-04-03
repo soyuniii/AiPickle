@@ -1,8 +1,9 @@
 
-import React from 'react';
-import { TouchableOpacity, Image, Platform } from 'react-native';
+import React, {useEffect} from 'react';
+import { Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import SplashScreen from 'react-native-splash-screen';
 import HomeScreen from './src/screens/HomeScreen';
 import SearchResultScreen from './src/screens/SearchResultScreen';
 import LoadingScreen from './src/screens/LoadingScreen';
@@ -10,7 +11,11 @@ import SummaryScreen from './src/screens/SummaryScreen';
 
 const Stack = createStackNavigator();
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
   return (
     <NavigationContainer>
       <Stack.Navigator
