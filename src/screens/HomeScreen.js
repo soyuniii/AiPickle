@@ -9,6 +9,9 @@ const HomeScreen = () => {
 
     const handleSearch = () => {
         if (!searchText.trim()) return;
+        console.log('검색:', searchText);
+        setSearchText('');
+
         nav.navigate('Loading', { message: '검색 중...' });
 
         setTimeout(() => {
